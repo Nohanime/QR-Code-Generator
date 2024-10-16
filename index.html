@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Nohan-Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <a href="index.html">
+          <img src="./images/Nohan-Logo.png" alt="QR Code" />
+        </a>
+      </div>
+      <div class="right-nav">
+        <a href="connect.html">Connectez-vous</a>
+        <a href="subscribe.html">Inscrivez-vous</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Générateur de QR Code</h1>
+        <input
+          type="text"
+          id="qr-text"
+          placeholder="Entrez le texte pour créer le QR code"
+        />
+        <button onclick="generateQR()">Générer QR Code</button>
+        <div id="qrcode"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright © 2024 | <a href="https://github.com/Nohanime">Nohan</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </body>
+</html>
