@@ -92,7 +92,7 @@ div.container {
     background-color: var(--beige);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 12px 16px 8px rgba(0, 0, 0, .3);
+    box-shadow: 12px 16px 8px var(--border);
 }
 
 h1 {
@@ -133,7 +133,7 @@ input:focus {
     top: 6px;
     cursor: pointer;
     font-size: 20px;
-    color: #333;
+    color: var(--body);
 }
 
 form a {
