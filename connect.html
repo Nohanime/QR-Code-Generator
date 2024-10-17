@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Nohan-Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/connect.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <a href="index.html">
+          <img src="./images/Nohan-Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="right-nav">
+        <a href="index.html">Générateur</a>
+        <a href="subscribe.html">Inscrivez-vous</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Connexion</h1>
+        <form id="login-form">
+          <input type="email" id="email" placeholder="Email" required />
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              placeholder="Mot de passe"
+              required
+            />
+            <span class="toggle-password" onclick="togglePasswordVisibility()">
+              <img
+                id="password-toggle-icon"
+                class="toggle-password"
+                src="./images/visibility.svg"
+                alt="Show password"
+              />
+            </span>
+          </div>
+          <a href="index.html">Se connecter</a>
+        </form>
+        <p>
+          Pas encore de compte ? <a href="subscribe.html">Inscrivez-vous</a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright © 2024 | <a href="https://github.com/Nohanime">Nohan</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

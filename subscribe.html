@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link
+      rel="shortcut icon"
+      href="./images/Nohan-Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/subscribe.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-nav">
+        <a href="index.html">
+          <img src="./images/Nohan-Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="right-nav">
+        <a href="index.html">Générateur</a>
+        <a href="connect.html">Connectez-vous</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Créer un compte</h1>
+        <form id="register-form">
+          <input type="text" id="name" placeholder="Nom complet" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              placeholder="Mot de passe"
+              required
+            />
+            <span class="toggle-password" onclick="togglePasswordVisibility()">
+              <img
+                id="password-toggle-icon"
+                class="toggle-password"
+                src="./images/visibility.svg"
+                alt="Show password"
+              />
+            </span>
+          </div>
+          <div class="confirm-password-container">
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Confirmez le mot de passe"
+              required
+            />
+            <span
+              class="toggle-password"
+              onclick="toggleConfirmPasswordVisibility()"
+            >
+              <img
+                id="confirm-password-toggle-icon"
+                class="toggle-password"
+                src="./images/visibility.svg"
+                alt="Show password"
+              />
+            </span>
+          </div>
+          <a href="index.html">S'inscrire</a>
+        </form>
+        <p>Déjà un compte ? <a href="connect.html">Connectez-vous</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright © 2024 | <a href="https://github.com/Nohanime">Nohan</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
